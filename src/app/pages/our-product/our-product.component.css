@@ -1,0 +1,128 @@
+header {
+  height: 55vh;
+  background-color: #dad2c5;
+  margin-top: 50px;
+}
+
+h1,
+h3 {
+  color: #f9f5f2;
+}
+
+.p-header {
+  font-size: 14px;
+  color: #f9f5f2;
+}
+
+.leftPart-header {
+  background-color: #003459;
+}
+
+.but1 {
+  background-color: transparent;
+  border: solid 1px #f9f5f2;
+  color: #f9f5f2;
+  transition: 0.5s;
+}
+
+.but2 {
+  background-color: #f9f5f2;
+  border: #003459 solid 1px;
+  color: #003459;
+  transition: 0.5s;
+}
+
+.but1:hover {
+  background-color: white;
+  border: solid 1px #f9f5f2;
+  color: #003459;
+}
+
+.but2:hover {
+  background-color: transparent;
+  border: #ffffff solid 1px;
+  color: #ffffff;
+}
+
+.sliderr-vh {
+  height: 45vh;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.418);
+}
+
+h4 {
+  color: #003459;
+}
+
+.color-circle1 {
+  background-color: red;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.color-circle2 {
+  background-color: yellow;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.color-circle3 {
+  background-color: black;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.color-circle4 {
+  background-color: whitesmoke;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: silver 1px solid;
+}
+
+.color-circle5 {
+  background-color: silver;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.color-circle6 {
+  background-color: tan;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.psmall {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.fa-filter {
+  color: #003459;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .header-img {
+    display: none;
+  }
+}
+
+.fade-button {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.card:hover .fade-button {
+  opacity: 1;
+  transform: translateY(0);
+}
+

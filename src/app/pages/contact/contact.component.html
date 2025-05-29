@@ -1,0 +1,43 @@
+<div class="container my-5 py-5">
+  <h2 class="text-center my-4 ">Discover Handmade Crafts: Learn New Skills and Create Your Own Unique Products!</h2>
+
+  <p class="lead text-center">
+    Do you want to learn how to create unique handmade items? In our specialized workshops,
+    you’ll discover new skills like pottery, knitting, and embroidery. Expert instructors will
+    guide you in mastering these arts, and you’ll leave with a beautiful product that you can
+    proudly call your own.
+  </p>
+
+
+
+  <div class="text-center my-4">
+    <h4>Why Join Us?</h4>
+    <p class="lead">Enjoy a hands-on experience that lets you express your creativity using high-quality materials and expert support.</p>
+  </div>
+
+
+<hr>
+
+  <div class="row mt-5">
+      <h2 class="mb-4 text-center">Our instructors</h2>
+      @for ( work of workshops; track 3) {
+          <div class="col-md-4 mb-4" >
+              <div class="card h-100 shadow-sm">
+                <img [src]="work.image" class="card-img-top" alt="{{work.name}}">
+                <div class="card-body">
+                  <h5 class="card-title">{{work.name}}</h5>
+                  <p class="card-text "><span class="fw-bold">Instructor:</span> {{work.instructor}}</p>
+                  <p class="card-text"><span class="fw-bold">Specialty:</span> {{work.specialty}}</p>
+                  <p class="card-text"><span class="fw-bold">Schedule:</span> {{work.schedule}}</p>
+                  <a (click)="register()" class="btn btn-primary w-100">Register Now</a>
+                </div>
+              </div>
+            </div>
+      }
+
+  </div>
+
+  <div class="text-center mt-5">
+    <p class="text-muted">Limited spots available to ensure quality. Book your place now and start your handmade journey!</p>
+  </div>
+</div>

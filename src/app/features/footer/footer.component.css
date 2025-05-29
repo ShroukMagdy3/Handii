@@ -1,0 +1,59 @@
+.bg-custom {
+  background-color: #5c748c;
+}
+
+footer h5 {
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.social-link {
+  color: #fff;
+  transition: all 0.3s ease, color 0.3s ease;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.link-hover {
+  color: rgb(212, 211, 211);
+  text-decoration: none;
+  transition: all 0.5s ease;
+  padding: 5px 30px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.link-hover:hover {
+  transform: translateX(20px);
+  background-color: #ffffff6c;
+  color: white;
+}
+
+
+.subscribe-form .input-group {
+  background-color: #fff;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  border: none;
+  border-radius: 25px 0 0 25px;
+  padding: 10px;
+}
+
+.subscribe-form .btn-primary {
+  background-color: #fff;
+  color: #5c748c;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  padding: 10px 20px;
+  transition: all 0.3s ease, color 0.3s ease;
+}
+
+.subscribe-form .btn-primary:hover {
+  background-color: #5c748c;
+  color: #fff;
+}

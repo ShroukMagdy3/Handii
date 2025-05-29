@@ -1,0 +1,68 @@
+<div class="container min-vh-100 d-flex align-items-end justify-content-center">
+  <div class="row w-100">
+    <!-- Left Part -->
+    <div
+      class="left-part col-md-6 d-flex flex-column align-items-center justify-content-center text-center p-5 from-left"
+    >
+      <h2>
+        Welcome Back! <br />
+        <span class="fw-bold">HandiQ!</span>
+      </h2>
+      <div class="img-container">
+        <img
+          src="assets/images/sign.jpg"
+          alt="Handmade IMAGE"
+          class="img-fluid mt-4"
+          style="max-width: 300px"
+        />
+      </div>
+    </div>
+
+    <!-- Right Part(Form) -->
+    <div class="col-md-6 p-5 reveal">
+      <h3 class="fw-bolder h2 mb-4 text-center">
+        Sign IN<span class="text-primary fs-2">.</span>
+      </h3>
+
+      <form>
+        <!-- Email -->
+        <div class="mb-3">
+          <label class="form-label text-secondary fw-bold">Email</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="email@gmail.com"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div class="mb-3">
+          <label class="form-label text-secondary fw-bold">Password</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-lock"></i></span>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Enter your password"
+            />
+          </div>
+        </div>
+
+        <!-- Icons -->
+      </form>
+      <!-- Login Button -->
+      <button (click)="submit()" (click)="logIn()" class="text-white fw-bold border-0 p-2 w-100">
+        Sign IN
+      </button>
+      <div class="d-flex justify-content-center gap-3 align-items-center mt-2">
+        <i class="fa-brands fa-google fs-4"></i>
+        <i class="fa-brands fa-facebook fs-4 mx-4"></i>
+        <i class="fa-brands fa-apple fs-3"></i>
+      </div>
+    </div>
+  </div>
+</div>

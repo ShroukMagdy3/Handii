@@ -1,0 +1,49 @@
+<section class="my-5 py-5 give-get-container">
+  <h2>Give & Get<span class="text-danger">.</span></h2>
+  <p class="subtitle">
+    Trade in your old handmade items and receive discounts on new handmade
+    treasures!
+  </p>
+
+  <div class="steps">
+    <div class="step">
+      <span><i class="fa-solid fa-1"></i></span>
+      <p>Upload your handmade item details</p>
+    </div>
+    <div class="step">
+      <span><i class="fa-solid fa-2"></i></span>
+      <p>We evaluate and offer a discount</p>
+    </div>
+    <div class="step">
+      <span><i class="fa-solid fa-3"></i></span>
+      <p>Choose a new item and apply the discount</p>
+    </div>
+  </div>
+
+  <form class="give-form" (ngSubmit)="submitForm()" #giveForm="ngForm">
+    <input type="file" />
+    <input
+      type="text"
+      placeholder="Item Name"
+      required
+      [(ngModel)]="item.name"
+      name="name"
+    />
+    <input
+      type="text"
+      placeholder="Category"
+      required
+      [(ngModel)]="item.category"
+      name="category"
+    />
+
+    <textarea
+      placeholder="Describe your item"
+      required
+      [(ngModel)]="item.description"
+      name="description"
+    ></textarea>
+
+    <button type="submit" [disabled]="!giveForm.form.valid">Submit Item</button>
+  </form>
+</section>

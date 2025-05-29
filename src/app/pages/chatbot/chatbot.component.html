@@ -1,0 +1,19 @@
+<div class="container py-4 mt-5">
+  <div class="">
+    <div class=" text-white text-center chatbot-header">
+      <h2 class="">Handi<span class="text-black">Q<span class="text-danger">.</span></span></h2>
+      <p class="m-0">Ask us anything about our products! 🤖</p>
+    </div>
+    <div class="card-body chatbot-body" >
+      <div *ngFor="let msg of messages" [ngClass]="{'user-msg': msg.user, 'bot-msg': !msg.user}" class=" mb-2 p-2 rounded">
+        {{ msg.text }}
+      </div>
+    </div>
+    <div class="card-footer">
+      <div class="input-group">
+        <input [(ngModel)]="userInput" type="text" class="form-control" placeholder="Type your message..." (keyup.enter)="sendMessage()">
+        <button class="btn btn-primary " (click)="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+</div>

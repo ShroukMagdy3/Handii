@@ -1,0 +1,76 @@
+h2 , h3 , h4 , i{
+  color: #003459;
+}
+
+.main-butt{
+  background: #7495A1;
+}
+
+.sliderr-vh{
+  height: 45vh;
+}
+
+.carousel-caption{
+  background-color:rgba(0, 0, 0, 0.514);
+}
+
+.sec-butt{
+  background-color: silver;
+}
+
+.subscribe{
+  background-color:  #DAD2C5;
+}
+
+input{
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.sub-butt{
+  background-color: #003459;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.sub-img{
+  background-color: #003459;
+}
+
+.rev-card{
+  background-color: #acb9c5;
+}
+
+.rev-cap{
+font-size: 15px;
+}
+.rev-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.explore img{
+  animation: float 3s ease-in-out infinite;
+}
+.card1{
+  transition: all .3s;
+  border: .5px solid #7495a198;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.082);
+
+
+}
+.card1:hover{
+  transform: scale(1.01);
+}
+.carousel button{
+  background-color: transparent !important;
+}
+@media screen and (max-width: 767px){
+  .subscribe button{
+    width: 35%;
+  }
+}
+
+

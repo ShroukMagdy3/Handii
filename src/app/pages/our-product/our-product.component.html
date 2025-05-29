@@ -1,0 +1,455 @@
+<header class="pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="header-img">
+          <img
+            src="assets/images/.....jpg"
+            class="w-100 rounded-3"
+            alt="header img"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-8">
+        <div class="text-center leftPart-header p-4 rounded-3">
+          <h1 class="fw-bold">Our Sustainable Collection</h1>
+          <h3 class="h2">Eco-Friendly!</h3>
+          <p class="p-header">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Tempore facere ducimus ex delectus? <br />
+            Ipsam, molestiae vero? Recusandae expedita deleniti aperiam aut!
+            Eos, minus?
+          </p>
+
+          <button class="but1 rounded-5 p-2 me-3 fw-medium">
+            Join give & Get
+          </button>
+          <button class="but2 rounded-5 p-2 fw-medium">Explore Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="mt-5 pt-5 container">
+  <div class="row">
+    @if (isFilterVisible) {
+    <div class="col-md-3">
+      <h4 class="fw-medium mb-4">Filter</h4>
+      <div>
+        <h5 class="fw-bold">Gender</h5>
+        <input type="checkbox" class="me-2" name="man" id="man" />
+        <label for="man">Man</label>
+        <br />
+        <input type="checkbox" class="me-2" name="Woman" id="Woman" />
+        <label for="Woman">Woman</label>
+      </div>
+
+      <div class="mt-4">
+        <h5 class="fw-bold">Color</h5>
+        <input type="checkbox" class="me-2" name="Red" id="Red" />
+        <div class="color-circle1 d-inline-block me-2"></div>
+        <label for="Red">Red</label>
+        <br />
+        <input type="checkbox" class="me-2" name="Yellow" id="Yellow" />
+        <div class="color-circle2 d-inline-block me-2"></div>
+        <label for="Yellow">Yellow</label>
+        <br />
+        <input type="checkbox" class="me-2" name="Black" id="Black" />
+        <div class="color-circle3 d-inline-block me-2"></div>
+        <label for="Black">Black</label>
+        <br />
+        <input type="checkbox" class="me-2" name="White" id="White" />
+        <div class="color-circle4 d-inline-block me-2"></div>
+        <label for="White">White</label>
+        <br />
+        <input type="checkbox" class="me-2" name="Silver" id="Silver" />
+        <div class="color-circle5 d-inline-block me-2"></div>
+        <label for="Silver">Silver</label>
+        <br />
+        <input type="checkbox" class="me-2" name="Tan" id="Tan" />
+        <div class="color-circle6 d-inline-block me-2"></div>
+        <label for="Tan">Tan</label>
+      </div>
+
+      <div class="mt-4">
+        <h5 class="fw-bold">Price</h5>
+        <input
+          type="number"
+          class="me-2 w-25 rounded border-1 border-black px-2"
+          placeholder="Min"
+          name="man"
+          id="man"
+        />
+
+        <input
+          type="number"
+          class="me-2 w-25 rounded border-1 border-black px-2"
+          placeholder="Max"
+          name="Woman"
+          id="Woman"
+        />
+      </div>
+
+      <div class="mt-4 mb-3">
+        <h5 class="fw-bold">Size</h5>
+        <input type="checkbox" class="me-2" name="Small" id="Small" />
+        <label for="Small">Small</label>
+        <br />
+        <input type="checkbox" class="me-2" name="Medium" id="Medium" />
+        <label for="Medium">Medium</label>
+        <br />
+        <input type="checkbox" class="me-2" name="Large" id="Large" />
+        <label for="Large">Large</label>
+        <br />
+        <input type="checkbox" class="me-2" name="X-Large" id="X-Large" />
+        <label for="X-Large">X-Large</label>
+      </div>
+    </div>
+    }
+
+    <div class="col-md-9">
+      <div class="d-flex align-items-center m-0">
+        <h4 class="fw-medium mb-4">Crochet & Knitting</h4>
+        <p class="text-secondary ms-2 psmall">52 Products</p>
+        <p
+          class="border-1 border-secondary psmall px-2 py-1 rounded-5 text-secondary ms-auto"
+        >
+          Sort By: Popular <i class="fa-solid fa-caret-down ms-1"></i>
+        </p>
+      </div>
+
+      <div
+        (click)="toggleFilter()"
+        class="fa-filter border-secondary rounded p-2 d-inline-block m-0"
+      >
+        <i class="fa-solid fa-filter"></i>
+        <span class="fw-bold ms-2">Filter</span>
+      </div>
+
+      <div class="row g-4 mb-3">
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 text-center">
+            <div class="overflow-hidden" style="height: 200px">
+              <img
+                src="assets/images/accesserios/1 (1).jpg"
+                class="w-100 h-100 rounded"
+                style="object-fit: cover"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="mt-3 mb-0">Product</h5>
+              <p class="text-secondary m-1">Lorem ipsum dolor sit amet.</p>
+              <p class="text-black fw-medium m-0">10.99$</p>
+              <div class="d-flex justify-center  align-items-center gap-2 ">
+                <button
+                  (click)="addTocart()"
+                  class="btn btn-primary mt-2 fade-button d-block mx-auto"
+                >
+
+                 CART
+                 <i class="fa-solid fa-cart-plus text-white"></i>
+                </button>
+                <button
+                  (click)="addToWish()"
+                  class="btn btn-primary mt-2 fade-button d-block mx-auto"
+                >
+                   WISHTLIST
+                   <i class="fa-solid fa-heart-circle-plus text-danger"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 text-center">
+            <div class="overflow-hidden" style="height: 200px">
+              <img
+                src="assets/images/accesserios/images (8).jpg"
+                class="w-100 h-100 rounded"
+                style="object-fit: cover"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="mt-3 mb-0">Product</h5>
+              <p class="text-secondary m-1">Lorem ipsum dolor sit amet.</p>
+              <p class="text-black fw-medium m-0">10.99$</p>
+              <div class="d-flex justify-center  align-items-center gap-2 ">
+                <button
+                  (click)="addTocart()"
+                  class="btn btn-primary mt-2 fade-button d-block mx-auto"
+                >
+
+                 CART
+                 <i class="fa-solid fa-cart-plus text-white"></i>
+                </button>
+                <button
+                  (click)="addToWish()"
+                  class="btn btn-primary mt-2 fade-button d-block mx-auto"
+                >
+                   WISHTLIST
+                   <i class="fa-solid fa-heart-circle-plus text-danger"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 text-center">
+            <div class="overflow-hidden" style="height: 200px">
+              <img
+                src="assets/images/accesserios/images (2).jpg"
+                class="w-100 h-100 rounded"
+                style="object-fit: cover"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="mt-3 mb-0">Product</h5>
+              <p class="text-secondary m-1">Lorem ipsum dolor sit amet.</p>
+              <p class="text-black fw-medium m-0">10.99$</p>
+              <div class="d-flex justify-center  align-items-center gap-2 ">
+                <button
+                  (click)="addTocart()"
+                  class="btn btn-primary mt-2 fade-button d-block mx-auto"
+                >
+                 CART
+                 <i class="fa-solid fa-cart-plus text-white"></i>
+                </button>
+                <button
+                  (click)="addToWish()"
+                  class="btn btn-primary mt-2 fade-button d-block mx-auto"
+                >
+                   WISHTLIST
+                   <i class="fa-solid fa-heart-circle-plus text-danger"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mb-3">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100">
+            <div class="overflow-hidden" style="height: 200px">
+              <img
+                src="assets/images/accesserios/LoveJewellerySet2.webp"
+                class="w-100 h-100 rounded"
+                style="object-fit: cover"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title mt-2 mb-0">Product</h5>
+              <p class="text-secondary mb-1">Lorem ipsum dolor sit amet.</p>
+              <p class="text-black fw-medium mb-0 text-center">10.99$</p>
+              <div class="d-flex justify-center  align-items-center gap-2 ">
+                <button
+                  (click)="addTocart()"
+                  class="btn btn-primary mt-2 fade-button d-block mx-auto"
+                >
+
+                 CART
+                 <i class="fa-solid fa-cart-plus text-white"></i>
+                </button>
+                <button
+                  (click)="addToWish()"
+                  class="btn btn-primary mt-2 fade-button d-block mx-auto"
+                >
+                   WISHTLIST
+                   <i class="fa-solid fa-heart-circle-plus text-danger"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 text-center">
+            <div class="overflow-hidden" style="height: 200px">
+              <img
+                src="assets/images/wood/71keLx1dLvL.jpg"
+                class="w-100 h-100 rounded"
+                style="object-fit: cover"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="mt-3 mb-0">Product</h5>
+              <p class="text-secondary m-1">Lorem ipsum dolor sit amet.</p>
+              <p class="text-black fw-medium m-0 text-center">10.99$</p>
+              <div class="d-flex justify-center  align-items-center gap-2 ">
+                <button
+                  (click)="addTocart()"
+                  class="btn btn-primary mt-2 fade-button d-block mx-auto"
+                >
+
+                 CART
+                 <i class="fa-solid fa-cart-plus text-white"></i>
+                </button>
+                <button
+                  (click)="addToWish()"
+                  class="btn btn-primary mt-2 fade-button d-block mx-auto"
+                >
+                   WISHTLIST
+                   <i class="fa-solid fa-heart-circle-plus text-danger"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100">
+            <div class="overflow-hidden" style="height: 200px">
+              <img
+                src="assets/images/accesserios/images (5).jpg"
+                class="w-100 h-100 rounded"
+                style="object-fit: cover"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title mt-2 mb-0">Product</h5>
+              <p class="text-secondary mb-1">Lorem ipsum dolor sit amet.</p>
+              <p class="text-black fw-medium mb-0 text-center">10.99$</p>
+               <div class="d-flex justify-center  align-items-center gap-2 ">
+                <button
+                  (click)="addTocart()"
+                  class="btn btn-primary mt-2 fade-button d-block mx-auto"
+                >
+
+                 CART
+                 <i class="fa-solid fa-cart-plus text-white"></i>
+                </button>
+                <button
+                  (click)="addToWish()"
+                  class="btn btn-primary mt-2 fade-button d-block mx-auto"
+                >
+                   WISHTLIST
+                   <i class="fa-solid fa-heart-circle-plus text-danger"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mb-3">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 text-center">
+            <div class="overflow-hidden" style="height: 200px">
+              <img
+                src="assets/images/crochet/DSC_8393_1080x.webp"
+                class="w-100 h-100 rounded"
+                style="object-fit: cover"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="mt-3 mb-0">Product</h5>
+              <p class="text-secondary m-1">Lorem ipsum dolor sit amet.</p>
+              <p class="text-black fw-medium m-0">10.99$</p>
+              <div class="d-flex justify-center  align-items-center gap-2 ">
+                <button
+                  (click)="addTocart()"
+                  class="btn btn-primary mt-2 fade-button d-block mx-auto"
+                >
+
+                 CART
+                 <i class="fa-solid fa-cart-plus text-white"></i>
+                </button>
+                <button
+                  (click)="addToWish()"
+                  class="btn btn-primary mt-2 fade-button d-block mx-auto"
+                >
+                   WISHTLIST
+                   <i class="fa-solid fa-heart-circle-plus text-danger"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 text-center">
+            <div class="overflow-hidden" style="height: 200px">
+              <img
+                src="assets/images/accesserios/images (6).jpg"
+                class="w-100 h-100 rounded"
+                style="object-fit: cover"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="mt-3 mb-0">Product</h5>
+              <p class="text-secondary m-1">Lorem ipsum dolor sit amet.</p>
+              <p class="text-black fw-medium m-0">10.99$</p>
+              <div class="d-flex justify-center  align-items-center gap-2 ">
+                <button
+                  (click)="addTocart()"
+                  class="btn btn-primary mt-2 fade-button d-block mx-auto"
+                >
+
+                 CART
+                 <i class="fa-solid fa-cart-plus text-white"></i>
+                </button>
+                <button
+                  (click)="addToWish()"
+                  class="btn btn-primary mt-2 fade-button d-block mx-auto"
+                >
+                   WISHTLIST
+                   <i class="fa-solid fa-heart-circle-plus text-danger"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 text-center">
+            <div class="overflow-hidden" style="height: 200px">
+              <img
+                src="assets/images/accesserios/images (5).jpg"
+                class="w-100 h-100 rounded"
+                style="object-fit: cover"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="mt-3 mb-0">Product</h5>
+              <p class="text-secondary m-1">Lorem ipsum dolor sit amet.</p>
+              <p class="text-black fw-medium m-0">10.99$</p>
+             <div class="d-flex justify-center  align-items-center gap-2 ">
+                <button
+                  (click)="addTocart()"
+                  class="btn btn-primary mt-2 fade-button d-block mx-auto"
+                >
+
+                 CART
+                 <i class="fa-solid fa-cart-plus text-white"></i>
+                </button>
+                <button
+                  (click)="addToWish()"
+                  class="btn btn-primary mt-2 fade-button d-block mx-auto"
+                >
+                   WISHTLIST
+                   <i class="fa-solid fa-heart-circle-plus text-danger"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
