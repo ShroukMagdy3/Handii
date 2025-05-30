@@ -1,12 +1,12 @@
 @if (showLinks) {
   <nav
-    class="navbar navbar-expand-lg position-fixed w-100 top-0 z-3 bg-body-tertiary"
+    class="navbar navbar-expand-lg position-fixed w-100 top-0 z-3"
     style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.082) ; background-color: #5c748c;"
   >
     <div class="container">
       <div class="">
-        <h2 class="mt-0" style="color: #5c748c">
-          handi<span class="text-black">Q<span class="text-danger">.</span></span>
+        <h2 class="mt-0" style="color:white">
+          handi<span class="text-dark">Q<span class="text-danger">.</span></span>
         </h2>
       </div>
       <button
@@ -22,11 +22,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul
-          class="navbar-nav bg-body-tertiary d-flex justify-content-center align-items-center mx-auto"
+          class="navbar-nav d-flex justify-content-center align-items-center mx-auto"
         >
           <li class="nav-item me-3">
             <a
-              class="nav-link text-dark navbar-link"
+              class="nav-link text-white navbar-link "
               aria-current="page"
               routerLink="home"
               routerLinkActive="navbar-link-active"
@@ -35,7 +35,7 @@
           </li>
           <li class="nav-item me-3">
             <a
-              class="nav-link text-dark navbar-link"
+              class="nav-link text-white navbar-link"
               routerLink="ourProduct"
               routerLinkActive="navbar-link-active"
               >Our Products</a
@@ -43,7 +43,7 @@
           </li>
           <li class="nav-item me-3">
             <a
-              class="nav-link text-dark navbar-link"
+              class="nav-link text-white navbar-link"
               routerLink="give"
               routerLinkActive="navbar-link-active"
               >Give&Get</a
@@ -51,7 +51,7 @@
           </li>
           <li class="nav-item me-3">
             <a
-              class="nav-link text-dark navbar-link"
+              class="nav-link text-white navbar-link"
               routerLink="about"
               routerLinkActive="navbar-link-active"
               >About</a
@@ -59,7 +59,7 @@
           </li>
           <li class="nav-item me-2">
             <a
-              class="nav-link text-dark navbar-link"
+              class="nav-link text-white navbar-link"
               routerLink="workshops"
               routerLinkActive="navbar-link-active"
             >
@@ -69,33 +69,33 @@
         </ul>
         <div class="m-md-auto">
           <ul
-            class="navbar-nav bg-body-tertiary text-center d-flex flex-row justify-content-center p-2"
+            class="navbar-nav  text-center d-flex flex-row justify-content-center p-2"
           >
             <li>
               <i
                 class="me-2"
                 routerLink="fav"
                 routerLinkActive="navbar-link-active"
-                class="fa-solid fa-heart-circle-plus fa-xl"
+                class="fa-solid fa-heart-circle-plus fa-xl text-white"
               ></i>
             </li>
-            <a routerLink="cart" class="me-2"
+            <a routerLink="cart" class="me-2 "
               ><i
                 routerLinkActive="navbar-link-active "
-                class="fa-solid fa-cart-plus fa-xl"
+                class="fa-solid fa-cart-plus fa-xl text-white"
               ></i
             ></a>
             <li>
-              <a routerLink="chat"
+              <a routerLink="chat" class=""
                 ><i
                   routerLinkActive="navbar-link-active"
-                  class="fa-brands fa-rocketchat fa-xl"
+                  class="fa-brands fa-rocketchat fa-xl text-white"
                 ></i
               ></a>
             </li>
             <li>
-              <a routerLink="login" class="ms-2"
-                ><i class="fa-solid fa-right-from-bracket fa-xl"></i
+              <a routerLink="login" class="ms-2 text-white"
+                ><i class="fa-solid fa-right-from-bracket fa-xl text-white"></i
               ></a>
             </li>
           </ul>
@@ -106,11 +106,11 @@
 
   }@else {
   <nav
-    class="navbar bg-transparent navbar-expand-lg navbar-light px-5 fixed-top mb-5"
-    style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.082)"
+    class="navbar navbar-expand-lg navbar-light px-5  "
+    style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.082) ; background-color: #5c748c;"
   >
-    <h2 class="mt-0">
-      handi<span class="text-black">Q<span class="text-danger">.</span></span>
+    <h2 class="mt-0 text-white">
+      handi<span class="text-dark">Q<span class="text-danger">.</span></span>
     </h2>
     <div class="ms-auto d-flex align-items-center justify-content-around w-25">
       <ul class="navbar-nav">
@@ -119,7 +119,7 @@
             role="button"
             routerLink="signup"
             routerLinkActive="navbar-link-active"
-            class="nav-link navbar-link text-dark text-decoration-none fw-bolder me-2"
+            class="nav-link navbar-link text-white text-decoration-none fw-bolder me-2"
             >SignUp</a
           >
         </li>
@@ -128,7 +128,7 @@
             role="button"
             routerLink="login"
             routerLinkActive="navbar-link-active"
-            class="nav-link navbar-link text-dark text-decoration-none fw-bolder me-2"
+            class="nav-link navbar-link text-white text-decoration-none fw-bolder me-2"
           >
             SignIN</a
           >
