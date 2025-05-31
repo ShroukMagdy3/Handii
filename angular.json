@@ -43,11 +43,6 @@
                   "type": "initial",
                   "maximumWarning": "1mb",
                   "maximumError": "2mb"
-                },
-                {
-                  "type": "inlineStyle",
-                  "maximumWarning": "10kb",
-                  "maximumError": "15kb"
                 }
               ],
               "outputHashing": "all"
